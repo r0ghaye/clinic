@@ -1,0 +1,175 @@
+:root {
+    --color-gray: #8B8B8B;
+    --color-blue: #414880;
+    --color-pink: #FF64AE;
+    --color-white: #f1f1f1;
+    --color-bluedark: #091156;
+    
+
+}
+
+/* ---Font--- */
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 500;
+  src: url("../Fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+  
+}
+
+@font-face {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: bold;
+    src: url("../Fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: Poppins;
+    font-style: normal;
+    font-weight: normal;
+    src: url("../Fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  }
+
+  @font-face {
+    font-family: fonticon;
+    font-family: fonticon;
+    src: url("../Fonts/fonticon/fonticon.eot");
+    src: url("../Fonts/fonticon/fonticon.eot?#iefix") format("embedded-opentype"),
+      url("../Fonts/fonticon/fonticon.woff2") format("woff2"),
+      url("../Fonts/fonticon/fonticon.woff") format("woff"),
+      url("../Fonts/fonticon/fonticon.ttf") format("truetype");
+  }
+
+/* ---End of Font--- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    direction: ltr;
+}
+
+.container {
+    max-width: 125rem;
+    margin: 0 auto;
+}
+
+.btn {
+    color: var(--color-white);
+    background: var(--color-pink);
+    border-radius: 5rem;
+    border: none;
+    padding: 2.1rem 5rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 0.1rem;
+    cursor: pointer;
+}
+
+/* -----Header----- */
+.header__main {
+    background-image: url(../Img/header-Background.png);
+    background-repeat: no-repeat;
+    height: 75rem;
+    background-size: 154rem 75rem;
+}
+
+.header {
+    padding-top: 4rem; 
+}
+
+.head-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo{
+   width: 25.8rem;
+}
+
+.logo__img {
+    width: 100%;
+}
+
+.nav{
+     margin: 2.3rem 1rem;
+}
+
+.menu {
+    display: flex;
+    margin-left: 4rem;
+}
+
+.menu__item {
+    list-style: none; 
+    margin-left: 6rem;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: var(--color-gray);
+    font-size: 1.6rem;
+    
+}
+
+.home__link--color {
+    color: var(--color-blue);
+}
+
+.menu__link--active {
+    padding: 1.5rem 4rem;
+    background: var(--color-pink);
+    color: var(--color-white);
+    border-radius: 5rem;
+    font-weight: 600;
+}
+
+.home__menu {
+     display: none;
+} 
+
+/* -----End of Header----- */
+
+.main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 17rem;
+}
+.consultant {
+    margin-top: -3rem;
+    margin-left: 2.5rem;
+}
+.consultant__title {
+    font-size: 4.8rem;
+    color: var(--color-bluedark);
+    font-weight: 600;
+}
+.consultant__desc {
+    color: var(--color-bluedark);
+    font-size: 1.6rem;
+    letter-spacing: 0.1rem;
+    font-weight: 500;
+    width: 45rem;
+}
+.consultant__btn {
+    margin-top: 5rem;
+}
+.clinic {
+   margin-right: 15.7rem; 
+  
+}
+.clinic__img {
+    
+}
