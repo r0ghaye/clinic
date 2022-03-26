@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+      }
+      
+html {
+    font-size: 62.5%;
+      }
+      
+body {
+    font-family: "Poppins", sans-serif;
+        
+      }
+
+a {
+    
+}
+      
+.container {
+    max-width: 125rem;
+    margin: 0 auto;   
+    text-align: center;
+    position: relative;
+}
+
+
+/* TEXT */
+.text-style, h5 {
+    color: #FF64AE;
+    font-family: 'Poppins' , sans-serif;
+    line-height: 20px;
+    padding-top: 5rem;
+}
+
+.text-pink {
+    color: #FF64AE; 
+}
+
+h3 {
+    color: #091156; 
+    font-size: 20px;
+
+    
+}
+
+
+h4 {
+  color: #091156;  
+  size: 20px;
+  line-height: 15px;
+
+}
+
+h5 {
+    color: #FF64AE;
+    line-height: 20px;
+    font-size: 1rem;
+   
+}
+
+
+h6 {
+    
+    color: #8B8B8B;
+    letter-spacing: 10%;
+    line-height: 21px;
+    font-size: 10px;
+    padding-bottom: 1rem;
+    
+}
+
+
+
+/* Card */
+
+.card {
+    border-radius: 7px;
+    box-shadow: 0 0 20px 10px #f3f3f3;
+    text-align: center;
+    width: 25%;
+    height: 40rem;
+    display: inline-block;
+    margin: 1.5rem;
+    padding: 2rem;
+   
+}
+
+
+
+ .icon-style {
+    font-size: 20px;
+    letter-spacing: 10px;
+ }
+
+
+ /* section 2 */
+
+ .purple-background {
+     position: absolute;
+     right: 250px;
+ }
+   
+ .lady-bug {
+     position: absolute;
+     top: 950px;
+     right: 800px;
+     width: 450px;
+    
+ }
+
+ /* Text 2 */
+
+.text2 {
+    
+    font-family: 'Poppins' , sans-serif;
+    position: absolute;
+     top: 790px;
+     left: 630px;
+ }
+
+
+ /* Form */
+
+ .title {
+    position: absolute;
+    top: 900px;
+    left: 600px;
+}
+
+
+ input{
+    padding: 1rem 5rem;
+    border: 1px solid #d9ddfd;
+    border-radius: 10px;
+    outline: 0;
+    color: #d9ddfd;
+    margin-bottom: 25px;
+}
+
+::placeholder {
+    color: #cdcbd7;
+}
+
+
+.input-boxtwo {
+   width: 50rem;
+}
+
+ .input-boxtree {
+    width: 50rem;
+    height: 20rem;
+}
+
+.button-style {
+    border: 1px solid #f3f3f3;
+    background: #FF64AE;
+    padding: 1.5rem;
+    border-radius: 20px;
+    outline: 0;
+   width: 15rem;
+   color: #f3f3f3;
+}
+    
+
+
+
+/* Footer */
+
+.back-style {
+   position: absolute;
+   top: 1400px;
+   right: -175px;
+    
+}
+
+.back-style-two {
+    position: absolute;
+    top: 1400px;
+    right: -110;
+}
+
+
+ footer {
+  
+   background: #0D165C;
+   width: 1440px;
+   height: 450px;
+   margin-top: 110rem;
+
+ }
+
+ .logo-style img {
+     position: absolute;
+     left: 100px; 
+     width: 300px;
+    
+ }
+
+ .text-style-footer {
+     position: absolute;
+     top: 1730px;
+     left: 100px;
+ }
+
+ .text-style-footer h5 {
+     color: #D7DBFF;
+     font-size: 16px;
+     line-height: 24px;
+     letter-spacing: 2px;
+     font-family: 'poppins'sans-serif;
+     margin-bottom: 30px;
+ }
+
+ .address-style {
+     color: #d9ddfd;
+     font-family: 'poppins'sans-serif;
+     letter-spacing: 3px;
+     font-size: 10px;
+ }
+
+ .address-style a {
+     padding: 20px;
+     color: #D7DBFF; 
+ }
+
+ .icon-footer {
+     position: absolute;
+     top: 250px;
+     left: 100px;
+     letter-spacing: 20px;
+     font-size: 25px;
+     color: #f3f3f3;
+ }
+
+ /* sections */
+
+ .section-one {
+     position: absolute;
+     left: 700px;
+     top: -30px;
+     font-size: 12px;
+     font-family: 'Poppins' sans-serif;
+     color: #D7DBFF;
+     
+     
+     
+ }
+
+ .section-two  {
+    position: absolute;
+    left: 1000px;
+    top: -30px;
+    font-size: 12px;
+    font-family: 'Poppins' sans-serif;
+    color: #D7DBFF;
+    
+    
+   
+    
+}
+
+.section-one  h2 {
+    font-size: 18px;
+    font-family: 'Poppins' sans-serif;
+    letter-spacing: 2px;
+    color: #ffffff;
+    margin: 10px;  
+}
+
+.section-two  h2 {
+    font-size: 18px;
+    font-family: 'Poppins' sans-serif;
+    letter-spacing: 2px;
+    color: #ffffff;
+    margin: 15px;
+}
+
+ .fa-caret-right  { 
+  position: absolute;
+  left: -8px;
+  
+  
+
+  
+  
+}
+
+
+h4 {
+    color: #D7DBFF;
+    font-family: 'Poppins' sans-serif;
+    font-size: 10px;
+    letter-spacing: 3px;
+    padding: 4px;   
+}
+
+.button-pink {
+    position: absolute;
+    left: 1210px;
+    top: 200px;
+}
+
+.flash-up {
+    position: absolute;
+    left: 1rem;
+    top: 1rem;
+}
+
+.paragraph-footer {
+    position: absolute;
+    left: 800px;
+    top: 220px;
+    display:flex;
+    font-size: 10px;
+    
+    
+}
+
