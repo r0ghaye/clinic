@@ -3,9 +3,9 @@
     --color-blue: #414880;
     --color-pink: #FF64AE;
     --color-white: #f1f1f1;
-    --color-bluedark: #091156;
-    
-
+    --color-darkblue: #091156;
+    --color-lightblue: #f2f2fd;
+    --color-white-f: #ffffff;
 }
 
 /* ---Font--- */
@@ -17,12 +17,12 @@
   
 }
 
-@font-face {
+ @font-face {
     font-family: Poppins;
     font-style: normal;
     font-weight: bold;
     src: url("../Fonts/Poppins/Poppins-Bold.ttf") format("truetype");
-  }
+  } 
 
   @font-face {
     font-family: Poppins;
@@ -124,7 +124,7 @@ body {
 }
 
 .home__link--color {
-    color: var(--color-blue);
+    color: var(--color-gray);
 }
 
 .menu__link--active {
@@ -141,21 +141,26 @@ body {
 
 /* -----End of Header----- */
 
+/* -------Main--------- */
 .main {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 17rem;
+    
 }
+
 .consultant {
     margin-top: -3rem;
     margin-left: 2.5rem;
 }
+
 .consultant__title {
     font-size: 4.8rem;
     color: var(--color-bluedark);
     font-weight: 600;
 }
+
 .consultant__desc {
     color: var(--color-bluedark);
     font-size: 1.6rem;
@@ -163,13 +168,184 @@ body {
     font-weight: 500;
     width: 45rem;
 }
+
 .consultant__btn {
     margin-top: 5rem;
 }
+
 .clinic {
    margin-right: 15.7rem; 
   
 }
+
 .clinic__img {
     
 }
+
+/* -------End of Main--------- */
+.core-services {
+   margin-top: 21rem;
+}
+
+.core__beauty {
+    text-align: center;
+}
+
+.core__mainservices {
+    color: var(--color-pink);
+    font-size: 1.6rem;
+    font-weight: 600;
+    line-height: 4rem;
+}
+
+.core__title {
+    color: var(--color-bluedark);
+    text-align: center;
+    font-size: 3.6rem;
+    font-weight: 600;
+    width: 45rem;
+    margin: 0 auto;
+    line-height: 4.5rem;
+    margin-bottom: 2.1rem;
+} 
+
+.core__desc {
+    color: var(--color-gray);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    width: 74rem;
+    margin: 0 auto;
+}
+
+.boxes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.box {
+    width: 34.3rem;
+    height: 45.8rem;
+    margin-top: 7rem;
+    box-shadow: 0 2.5rem 5rem 2.5rem var(--color-lightblue);
+    border-radius: 3rem;
+    background: var(--color-white-f);
+    text-decoration: none;
+}
+
+
+.box__img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 7rem;
+}
+
+.box__title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-align: center;
+    margin-top: 6rem;
+    color: var(--color-darkblue);
+}
+
+.box__desc {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: var(--color-gray);
+    letter-spacing: 0.1rem;
+    line-height: 2.1rem;
+    width: 26rem;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+/* ----- */
+.about {
+    background-image: url(../Img/Bg-Bubble.png);
+    background-repeat: no-repeat;
+    height: 96rem;
+    margin-left: 81rem;
+    margin-top: -22rem;
+    background-size: 88rem 76rem;
+
+  
+}
+
+.aboutus__video {
+    display: flex;
+    justify-content: space-between;
+    margin-top: -60rem;
+}
+
+.aboutus {
+    margin-top: 1rem;
+}
+
+.aboutus__us {
+    color: var(--color-pink);
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.aboutus__title {
+    font-size: 3.6rem;
+    color: var(--color-darkblue);
+    font-weight: 600;
+    margin-top: 1.5rem;
+}
+
+.aboutus__desc ,
+ .aboutus__desc1{
+    color: var(--color-gray);
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 2.4rem;
+    letter-spacing: 0.1rem;
+    margin-top: 2rem;
+    width: 45rem;
+}
+
+.learn {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.play {
+    margin-top: 0.6rem;
+    margin-right: 9rem;
+}
+
+.aboutus__btn {
+    text-decoration: none;
+}
+
+.play__img {
+    width: 5.5rem;
+}
+
+.learn__link {
+    
+}
+
+.watch {
+    margin-left: 7rem;
+    margin-top: -4rem;
+    color: var(--color-gray);
+    font-size: 1.6rem;
+    letter-spacing: .1rem;
+    font-weight: 600;
+}
+
+.video {
+    margin-right: -6rem;
+    margin-top: -4rem;
+}
+
+.video__img {
+    
+}        
+
