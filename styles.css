@@ -2,27 +2,32 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-      }
-      
-html {
+  }
+  
+  html {
     font-size: 62.5%;
-      }
-      
-body {
+  }
+  
+  body {
+    
     font-family: "Poppins", sans-serif;
-        
-      }
+    text-align: center;
+    overflow-y: auto;
+    overflow-x: hidden;
+     
+  }
+
+  
+  .container {
+    max-width: 125rem;
+    margin: 0 auto;
+  }
+
 
 a {
-    
+    text-decoration: none;
 }
       
-.container {
-    max-width: 125rem;
-    margin: 0 auto;   
-    text-align: center;
-    position: relative;
-}
 
 
 /* TEXT */
@@ -32,6 +37,13 @@ a {
     line-height: 20px;
     padding-top: 5rem;
 }
+
+.text-style :hover {
+ color: #0D165C;
+ cursor: pointer;
+}
+
+
 
 .text-pink {
     color: #FF64AE; 
@@ -87,25 +99,67 @@ h6 {
 }
 
 
+.card-style h6:hover {
+    color: rgb(34, 32, 32);
+    cursor: pointer;
+}
+
+
 
  .icon-style {
-    font-size: 20px;
-    letter-spacing: 10px;
+     display: inline-flex;
+     text-align: center;
+
  }
 
+ .icon-style .icon {
+     margin: 0 10px;
+ }
+
+
+ .card-style h4 {
+     color: #0D165C;
+     letter-spacing: normal;
+ }
+
+ .icon-style .icon span{
+    height: 40px;
+    width: 40px;
+    display: block;
+    color: #091156;
+    background: #fff;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0,0.1);
+
+ }
+
+ .icon-style .icon span i {
+     font-size: 15px;
+     line-height: 40px;
+ }
+
+ .icon-style .icon span i:hover {
+     color: #D7DBFF;
+     cursor: pointer;
+ }
+
+
+ 
 
  /* section 2 */
 
  .purple-background {
      position: absolute;
-     right: 250px;
+     left: -100px;
+     top: 650px;
  }
    
  .lady-bug {
      position: absolute;
      top: 950px;
-     right: 800px;
-     width: 450px;
+     left: 200px;
+     width: 350px;
     
  }
 
@@ -115,10 +169,20 @@ h6 {
     
     font-family: 'Poppins' , sans-serif;
     position: absolute;
-     top: 790px;
-     left: 630px;
+     top: 800px;
+     left: 650px;
+     line-height: 24px;
+     
+     
  }
 
+
+  .text2  h6:hover {
+    color: #8B8B8B;
+    cursor: pointer;
+ }
+
+ 
 
  /* Form */
 
@@ -161,8 +225,11 @@ h6 {
    width: 15rem;
    color: #f3f3f3;
 }
-    
 
+.button-style:hover {
+   background-color: #D7DBFF;
+   cursor: pointer;
+}
 
 
 /* Footer */
@@ -170,37 +237,36 @@ h6 {
 .back-style {
    position: absolute;
    top: 1400px;
-   right: -175px;
+   left: -2px;
     
 }
+
 
 .back-style-two {
     position: absolute;
     top: 1400px;
-    right: -110;
+    left: -5px;
 }
 
 
- footer {
-  
-   background: #0D165C;
-   width: 1440px;
-   height: 450px;
-   margin-top: 110rem;
-
- }
 
  .logo-style img {
      position: absolute;
-     left: 100px; 
+     left: 100px;
+     top: 1600px; 
      width: 300px;
-    
+     
  }
+
+ .logo-style:hover {
+     cursor: pointer;
+ }
+
 
  .text-style-footer {
      position: absolute;
      top: 1730px;
-     left: 100px;
+     left: 150px;
  }
 
  .text-style-footer h5 {
@@ -224,15 +290,114 @@ h6 {
      color: #D7DBFF; 
  }
 
- .icon-footer {
+ 
+
+ /* Footer icons */
+
+ .wrapper {
+     display: inline-flex;
      position: absolute;
      top: 250px;
      left: 100px;
-     letter-spacing: 20px;
-     font-size: 25px;
-     color: #f3f3f3;
  }
 
+ .wrapper .icon {
+     margin: 0 20px;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     position: relative;
+     z-index: 2;
+     cursor: pointer;
+ }
+ .wrapper .icon span {
+     position: relative;
+     height: 60px;
+     width: 60px;
+     display: block;
+     background: #fff;
+     border-radius: 50%;
+     z-index: 2;
+     text-align: center;
+     box-shadow:0 10px 10px rgba(0, 0, 0,0.1);
+ }
+ .wrapper .icon:hover span i {
+     color: #fff;
+
+ }
+
+ .wrapper .icon span i {
+     font-size: 25px;
+     line-height: 60px;
+
+ }
+ .wrapper .icon .tooltip {
+    position: absolute;
+    top: 0px;
+    background: #fff;
+    color: #fff;
+    font-size: 20px;
+    padding: 10px 18px;
+    border-radius: 25px;
+    box-shadow:0 10px 10px rgba(0, 0, 0,0.1);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.4s cubic-bezier(0.68,-0.55,0.265,1.55);
+}
+
+.wrapper .icon:hover .tooltip {
+    top: -70px;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+   
+
+ .wrapper .icon .tooltip::before {
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
+    
+}
+ 
+
+ .wrapper .icon:hover span,
+ .wrapper .icon:hover .tooltip {
+     text-shadow: 0px -1px 0px rgba(0, 0, 0,0.4);
+ }
+
+ .wrapper .facebook:hover span,
+ .wrapper .facebook:hover .tooltip,
+ .wrapper .facebook:hover .tooltip::before{
+     background: #3B5999;
+ }
+
+ .wrapper .twitter:hover span,
+ .wrapper .twitter:hover .tooltip,
+ .wrapper .twitter:hover .tooltip::before{
+     background: #46C1F6;
+ }
+
+ .wrapper .youtube:hover span,
+ .wrapper .youtube:hover .tooltip,
+ .wrapper .youtube:hover .tooltip::before{
+     background: #DE463B;
+ }
+
+ .wrapper .instagram:hover span,
+ .wrapper .instagram:hover .tooltip,
+ .wrapper .instagram:hover .tooltip::before{
+     background: #e1306c;
+ }
+
+
+
+ 
  /* sections */
 
  .section-one {
@@ -268,21 +433,31 @@ h6 {
     margin: 10px;  
 }
 
+.section-one  h2:hover {
+    color: #8B8B8B;
+    cursor: pointer;
+}
+
 .section-two  h2 {
     font-size: 18px;
     font-family: 'Poppins' sans-serif;
     letter-spacing: 2px;
     color: #ffffff;
     margin: 15px;
+    text-align: center;
 }
+
+.section-two  h2:hover {
+    color: #8B8B8B;
+    cursor: pointer;
+
+}
+
 
  .fa-caret-right  { 
   position: absolute;
   left: -8px;
-  
-  
-
-  
+  text-align: center;
   
 }
 
@@ -295,11 +470,36 @@ h4 {
     padding: 4px;   
 }
 
+.section-one h4:hover {
+    color: #8B8B8B;
+    cursor: pointer;
+}
+
+
+.section-two h4:hover {
+    color: #8B8B8B;
+    cursor: pointer;
+}
+
+
+.text-style-footer h5:hover {
+    color: #8B8B8B;
+    cursor: pointer;
+}
+
+
+
 .button-pink {
     position: absolute;
-    left: 1210px;
+    left: 1200px;
     top: 200px;
 }
+
+.button-pink:hover {
+  color: #D7DBFF;
+  cursor: pointer;
+}
+
 
 .flash-up {
     position: absolute;
@@ -309,11 +509,12 @@ h4 {
 
 .paragraph-footer {
     position: absolute;
-    left: 800px;
-    top: 220px;
-    display:flex;
+    left: 700px;
+    top: 270px;
+    text-align: justify;
+    text-indent: 1000px;
+    color: #D7DBFF;
     font-size: 10px;
-    
-    
+    letter-spacing: 2px;
 }
 
