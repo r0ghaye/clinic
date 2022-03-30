@@ -7,6 +7,7 @@
     <title>Clinic</title>
     <link rel="stylesheet" href="CSS/Normalie.css" />
     <link rel="stylesheet" href="CSS/Styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <section class="header__main">
@@ -52,7 +53,7 @@
              <button class="consultant__btn btn" type="submit">More Details</button>
           </div>
           <div class="clinic">
-              <img src="Img/clinic.png" class="clinic__img" alt="clinic"/>
+              <img src="Img/clinic.png" class="clinic__img"  alt="clinic"  data-aos="flip-left" data-aos-delay="50" data-aos-duration="1000"/>
           </div>
       </div>
       <!-- --------End of Main------- -->
@@ -132,6 +133,11 @@
     </div>
     <!---------End of About--------->
     </section>
-    
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
