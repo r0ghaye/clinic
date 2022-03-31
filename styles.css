@@ -244,27 +244,19 @@ a {
 
 /* footer */
 
-.footer-back {
-    height: 70rem;
-    margin-top: 4rem;
-}
-
- 
-.footer-container {
-    display: flex;
-    justify-content: ;
-}
-
-.footer-logo {
-   width: 30rem;
-   height: 5rem;
-}
 
 
 
 
 /* Footer */
+.footer-main {
+    background-image: url(image/back5.jpg);
+    background-repeat: no-repeat;
+    height: 70rem;
+    background-size: cover;
+    margin-top: 9rem;;
 
+}
 
 
 
