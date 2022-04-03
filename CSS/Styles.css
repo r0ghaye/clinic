@@ -1,11 +1,11 @@
 :root {
-    --color-gray: #8B8B8B;
-    --color-blue: #414880;
-    --color-pink: #FF64AE;
-    --color-white: #f1f1f1;
-    --color-darkblue: #091156;
-    --color-lightblue: #f2f2fd;
-    --color-white-f: #ffffff;
+  --color-gray: #8b8b8b;
+  --color-blue: #414880;
+  --color-pink: #ff64ae;
+  --color-white: #f1f1f1;
+  --color-darkblue: #091156;
+  --color-lightblue: #f2f2fd;
+  --color-white-f: #ffffff;
 }
 
 /* ---Font--- */
@@ -14,32 +14,31 @@
   font-style: normal;
   font-weight: 500;
   src: url("../Fonts/Poppins/Poppins-Medium.ttf") format("truetype");
-  
 }
 
- @font-face {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: bold;
-    src: url("../Fonts/Poppins/Poppins-Bold.ttf") format("truetype");
-  } 
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  src: url("../Fonts/Poppins/Poppins-Bold.ttf") format("truetype");
+}
 
-  @font-face {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: normal;
-    src: url("../Fonts/Poppins/Poppins-Regular.ttf") format("truetype");
-  }
+@font-face {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  src: url("../Fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+}
 
-  @font-face {
-    font-family: fonticon;
-    font-family: fonticon;
-    src: url("../Fonts/fonticon/fonticon.eot");
-    src: url("../Fonts/fonticon/fonticon.eot?#iefix") format("embedded-opentype"),
-      url("../Fonts/fonticon/fonticon.woff2") format("woff2"),
-      url("../Fonts/fonticon/fonticon.woff") format("woff"),
-      url("../Fonts/fonticon/fonticon.ttf") format("truetype");
-  }
+@font-face {
+  font-family: fonticon;
+  font-family: fonticon;
+  src: url("../Fonts/fonticon/fonticon.eot");
+  src: url("../Fonts/fonticon/fonticon.eot?#iefix") format("embedded-opentype"),
+    url("../Fonts/fonticon/fonticon.woff2") format("woff2"),
+    url("../Fonts/fonticon/fonticon.woff") format("woff"),
+    url("../Fonts/fonticon/fonticon.ttf") format("truetype");
+}
 
 /* ---End of Font--- */
 
@@ -54,298 +53,279 @@ html {
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    direction: ltr;
+  font-family: "Poppins", sans-serif;
+  direction: ltr;
 }
 
 .container {
-    max-width: 125rem;
-    margin: 0 auto;
+  max-width: 125rem;
+  margin: 0 auto;
 }
 
 .btn {
-    color: var(--color-white);
-    background: var(--color-pink);
-    border-radius: 5rem;
-    border: none;
-    padding: 2.1rem 5rem;
-    font-size: 1.6rem;
-    font-weight: 600;
-    letter-spacing: 0.1rem;
-    cursor: pointer;
+  color: var(--color-white);
+  background: var(--color-pink);
+  border-radius: 5rem;
+  border: none;
+  padding: 2.1rem 5rem;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
 }
 
 /* -----Header----- */
 .header__main {
-    background-image: url(../Img/header-Background.png);
-    background-repeat: no-repeat;
-    height: 75rem;
-    background-size: 154rem 75rem;
+  background-image: url(../Img/header-Background.png);
+  background-repeat: no-repeat;
+  height: 75rem;
+  background-size: 154rem 75rem;
 }
 
 .header {
-    padding-top: 4rem; 
+  padding-top: 4rem;
 }
 
-.head-container{
-    display: flex;
-    justify-content: space-between;
+.head-container {
+  display: flex;
+  justify-content: space-between;
 }
 
-.logo{
-   width: 25.8rem;
+.logo {
+  width: 25.8rem;
 }
 
 .logo__img {
-    width: 100%;
+  width: 100%;
 }
 
-.nav{
-     margin: 2.3rem 1rem;
+.nav {
+  margin: 2.3rem 1rem;
 }
 
 .menu {
-    display: flex;
-    margin-left: 4rem;
+  display: flex;
+  margin-left: 4rem;
 }
 
 .menu__item {
-    list-style: none; 
-    margin-left: 6rem;
-    letter-spacing: 0.1rem;
-    font-weight: 500;
+  list-style: none;
+  margin-left: 6rem;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
 }
 
 .menu__link {
-    text-decoration: none;
-    color: var(--color-gray);
-    font-size: 1.6rem;
-    
+  text-decoration: none;
+  color: var(--color-gray);
+  font-size: 1.6rem;
 }
 
 .home__link--color {
-    color: var(--color-gray);
+  color: var(--color-gray);
 }
 
 .menu__link--active {
-    padding: 1.5rem 4rem;
-    background: var(--color-pink);
-    color: var(--color-white);
-    border-radius: 5rem;
-    font-weight: 600;
+  padding: 1.5rem 4rem;
+  background: var(--color-pink);
+  color: var(--color-white);
+  border-radius: 5rem;
+  font-weight: 600;
 }
 
 .home__menu {
-     display: none;
-} 
+  display: none;
+}
 
 /* -----End of Header----- */
 
 /* -------Main--------- */
 .main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 17rem;
-    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 17rem;
 }
 
 .consultant {
-    margin-top: -3rem;
-    margin-left: 2.5rem;
+  margin-top: -3rem;
+  margin-left: 2.5rem;
 }
 
 .consultant__title {
-    font-size: 4.8rem;
-    color: var(--color-bluedark);
-    font-weight: 600;
+  font-size: 4.8rem;
+  color: var(--color-bluedark);
+  font-weight: 600;
 }
 
 .consultant__desc {
-    color: var(--color-bluedark);
-    font-size: 1.6rem;
-    letter-spacing: 0.1rem;
-    font-weight: 500;
-    width: 45rem;
+  color: var(--color-bluedark);
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+  width: 45rem;
 }
 
 .consultant__btn {
-    margin-top: 5rem;
+  margin-top: 5rem;
 }
 
 .clinic {
-   margin-right: 15.7rem; 
-  
-}
-
-.clinic__img {
-    
+  margin-right: 15.7rem;
 }
 
 /* -------End of Main--------- */
 .core-services {
-   margin-top: 21rem;
+  margin-top: 21rem;
 }
 
 .core__beauty {
-    text-align: center;
+  text-align: center;
 }
 
 .core__mainservices {
-    color: var(--color-pink);
-    font-size: 1.6rem;
-    font-weight: 600;
-    line-height: 4rem;
+  color: var(--color-pink);
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 4rem;
 }
 
 .core__title {
-    color: var(--color-bluedark);
-    text-align: center;
-    font-size: 3.6rem;
-    font-weight: 600;
-    width: 45rem;
-    margin: 0 auto;
-    line-height: 4.5rem;
-    margin-bottom: 2.1rem;
-} 
+  color: var(--color-bluedark);
+  text-align: center;
+  font-size: 3.6rem;
+  font-weight: 600;
+  width: 45rem;
+  margin: 0 auto;
+  line-height: 4.5rem;
+  margin-bottom: 2.1rem;
+}
 
 .core__desc {
-    color: var(--color-gray);
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 2.4rem;
-    width: 74rem;
-    margin: 0 auto;
+  color: var(--color-gray);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  width: 74rem;
+  margin: 0 auto;
 }
 
 .boxes {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .box {
-    width: 34.3rem;
-    height: 45.8rem;
-    margin-top: 7rem;
-    box-shadow: 0 2.5rem 5rem 2.5rem var(--color-lightblue);
-    border-radius: 3rem;
-    background: var(--color-white-f);
-    text-decoration: none;
+  width: 34.3rem;
+  height: 45.8rem;
+  margin-top: 7rem;
+  box-shadow: 0 2.5rem 5rem 2.5rem var(--color-lightblue);
+  border-radius: 3rem;
+  background: var(--color-white-f);
+  text-decoration: none;
 }
 
-
 .box__img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 7rem;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7rem;
 }
 
 .box__title {
-    font-size: 1.8rem;
-    font-weight: 600;
-    text-align: center;
-    margin-top: 6rem;
-    color: var(--color-darkblue);
+  font-size: 1.8rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 6rem;
+  color: var(--color-darkblue);
 }
 
 .box__desc {
-    font-size: 1.4rem;
-    font-weight: 400;
-    color: var(--color-gray);
-    letter-spacing: 0.1rem;
-    line-height: 2.1rem;
-    width: 26rem;
-    margin: 0 auto;
-    text-align: center;
-    margin-top: 3rem;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--color-gray);
+  letter-spacing: 0.1rem;
+  line-height: 2.1rem;
+  width: 26rem;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 3rem;
 }
 
 /* ----- */
 .about {
-    background-image: url(../Img/Bg-Bubble.png);
-    background-repeat: no-repeat;
-    height: 96rem;
-    margin-left: 76rem;
-    margin-top: -23rem;
-    background-size: 115rem 99rem;
-
-  
+  background-image: url(../Img/Bg-Bubble.png);
+  background-repeat: no-repeat;
+  height: 96rem;
+  margin-left: 76rem;
+  margin-top: -23rem;
+  background-size: 115rem 99rem;
 }
 
 .aboutus__video {
-    display: flex;
-    justify-content: space-between;
-    margin-top: -60rem;
+  display: flex;
+  justify-content: space-between;
+  margin-top: -60rem;
 }
 
 .aboutus {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
 
 .aboutus__us {
-    color: var(--color-pink);
-    font-size: 1.6rem;
-    font-weight: 600;
+  color: var(--color-pink);
+  font-size: 1.6rem;
+  font-weight: 600;
 }
 
 .aboutus__title {
-    font-size: 3.6rem;
-    color: var(--color-darkblue);
-    font-weight: 600;
-    margin-top: 1.5rem;
+  font-size: 3.6rem;
+  color: var(--color-darkblue);
+  font-weight: 600;
+  margin-top: 1.5rem;
 }
 
-.aboutus__desc ,
- .aboutus__desc1{
-    color: var(--color-gray);
-    font-size: 1.6rem;
-    font-weight: 400;
-    line-height: 2.4rem;
-    letter-spacing: 0.1rem;
-    margin-top: 2rem;
-    width: 45rem;
+.aboutus__desc,
+.aboutus__desc1 {
+  color: var(--color-gray);
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 2.4rem;
+  letter-spacing: 0.1rem;
+  margin-top: 2rem;
+  width: 45rem;
 }
 
 .learn {
-    margin-top: 6rem;
-    display: flex;
-    justify-content: space-between;
+  margin-top: 6rem;
+  display: flex;
+  justify-content: space-between;
 }
 
 .play {
-    margin-top: 0.6rem;
-    margin-right: 9rem;
+  margin-top: 0.6rem;
+  margin-right: 9rem;
 }
 
 .aboutus__btn {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .play__img {
-    width: 5.5rem;
-}
-
-.learn__link {
-    
+  width: 5.5rem;
 }
 
 .watch {
-    margin-left: 7rem;
-    margin-top: -4rem;
-    color: var(--color-gray);
-    font-size: 1.6rem;
-    letter-spacing: .1rem;
-    font-weight: 600;
+  margin-left: 7rem;
+  margin-top: -4rem;
+  color: var(--color-gray);
+  font-size: 1.6rem;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
 }
 
 .video {
-    margin-right: -6rem;
-    margin-top: -4rem;
+  margin-right: -6rem;
+  margin-top: -4rem;
 }
-
-.video__img {
-    
-}        
-
