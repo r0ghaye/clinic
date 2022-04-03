@@ -30,6 +30,7 @@
 
 li {
     list-style-type: none;
+    text-align: justify;
 }
 
 a {
@@ -605,6 +606,11 @@ b {
      background: #e1306c;
  }
 
+
+ .fa-caret-right:before {
+    content: "\f0da";
+    margin-right: 1rem;
+}
 
 
  
