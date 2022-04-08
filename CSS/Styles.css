@@ -452,6 +452,7 @@ hr {
   display: flex;
   justify-content: space-between;
   margin-top: 10rem;
+ 
 }
 
 .boxes1 {
@@ -516,6 +517,29 @@ hr {
   border-radius: 50%;
   color: var(--color-darkblue);
 }
+
+
+.expert {
+  transform-style: preserve-3d;
+}
+
+.expert .boxes1 {
+  transform-style: preserve-3d;
+}
+
+.expert .boxes1 .boxes1__name {
+  transform-style: preserve-3d; 
+  transform: translate3d(0,0,75px);
+  transition: 0.5%;
+  z-index: 10;
+}
+
+
+
+
+
+
+
 
 /* ---End of Professional Teams--- */
 
