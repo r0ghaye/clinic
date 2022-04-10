@@ -505,6 +505,7 @@ hr {
 .socialmedia {
   margin-top: 6rem;
   text-align: center;
+  
 }
 
 .socialmedia__icon i {
@@ -518,6 +519,8 @@ hr {
   border-radius: 50%;
   color: var(--color-darkblue);
 }
+
+
 
 /* Contact us */
 
@@ -620,7 +623,7 @@ input {
 }
 
 .specifications__btn:hover {
-  background-color: var(--color-primary);
+  background-color: #8b8b8b;
   cursor: pointer;
 }
 
@@ -725,6 +728,12 @@ input {
   letter-spacing: 10%;
 }
 
+.pages__link:hover {
+  cursor: pointer;
+  color: #8b8b8b;
+}
+
+
 .information {
   margin-top: -3.5rem;
 }
@@ -747,6 +756,11 @@ input {
   letter-spacing: 10%;
   margin-bottom: 2rem;
   font-family: "Poppins";
+}
+
+.information_link:hover {
+  cursor: pointer;
+  color: #8b8b8b;
 }
 
 .footer__right {
