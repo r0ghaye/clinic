@@ -585,6 +585,7 @@ hr {
 /* input */
 
 input {
+
   width: 24rem;
   height: 6.1rem;
   border-radius: 1.5rem;
@@ -620,12 +621,43 @@ input {
 .specifications__btn {
   margin-top: 5rem;
   margin-left: 2rem;
+  
 }
 
 .specifications__btn:hover {
   background-color: #8b8b8b;
   cursor: pointer;
 }
+
+.style-input-msg {
+ display: flex;
+ justify-content: center;
+  align-items: center;
+  font-family: 'Poppins';
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+  color: #de463b;
+ margin-bottom: 15px;
+
+}
+
+.sing-msg {
+  font-size: 1.5rem;
+  font-family: 'Poppins';
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  letter-spacing: 0.5px;
+  color: green;
+  margin-top: 15px;
+  margin-left: -30rem;
+  text-shadow: 2px 0 4px rgb(37, 54, 10);
+  
+}
+
+
+
+
 
 /* Footer */
 
@@ -783,6 +815,10 @@ input {
   margin-top: -19rem;
   cursor: pointer;
 }
+
+
+
+
 
 /* Footer icons */
 

@@ -309,6 +309,7 @@
           <form action="#" class="contact__form">
             <div class="specifications">
               <input
+               
                 class="specifications__input"
                 type="text"
                 placeholder="First name"
@@ -319,9 +320,11 @@
                 data-aos="fade-right"
                 data-aos-delay="50"
                 data-aos-duration="1500"
+            
               />
               <input
-                class="specifications__input"
+
+                class="specifications__input last-input"
                 type="text"
                 placeholder="Last name"
                 required
@@ -329,9 +332,11 @@
                 data-aos-delay="50"
                 data-aos-duration="1500"
               />
+              <span class="lastname-msg style-input-msg"></span>
             </div>
 
             <input
+          
               class="contact__input"
               type="text"
               placeholder="Email address"
@@ -340,9 +345,11 @@
               data-aos-delay="50"
               data-aos-duration="1500"
             />
+            <span class="email-msg style-input-msg"></span>
 
             <input
-              class="contact__input"
+              
+              class="contact__input subject-msg"
               type="text"
               placeholder="Subject message"
               required
@@ -350,8 +357,10 @@
               data-aos-delay="50"
               data-aos-duration="1500"
             />
+            <span class="subj-msg style-input-msg"></span>
 
             <textarea
+             
               class="inquiry__input"
               type="text"
               placeholder="Your inquiry here"
@@ -360,8 +369,10 @@
               data-aos-delay="50"
               data-aos-duration="1500"
             ></textarea>
+            <span class="inquriy-msg style-input-msg"></span>
 
-            <button class="specifications__btn btn">Send Message</button>
+            <button id="sprcial-button" class="specifications__btn btn">Send Message</button>
+            <span class="sing-msg"></span>
           </form>
         </div>
       </div>
@@ -492,6 +503,7 @@
 	});
 	
     </script>
+    <script src="./JS/index.js"></script>
     
   </body>
 </html>
