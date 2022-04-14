@@ -59,11 +59,13 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   font-family: "Poppins", sans-serif;
   direction: ltr;
+  overflow-x: hidden;
 }
 
 .container {
@@ -80,16 +82,13 @@ a {
   text-decoration: none;
 }
 
-.btn {
-}
-
 /* -----Header----- */
 
 .header__main {
   background-image: url(../Img/header-Background.png);
   background-repeat: no-repeat;
   height: 75rem;
-  background-size: 154rem 75rem;
+  background-size: 81% 100%;
 }
 
 .header {
@@ -108,44 +107,6 @@ a {
 .logo__img {
   width: 100%;
 }
-
-/* .nav {
-  margin: 2.3rem 1rem;
-} */
-
-/* .menu {
-  display: flex;
-  margin-left: 4rem;
-} */
-
-/* .menu__item {
-  list-style: none;
-  margin-left: 6rem;
-  letter-spacing: 0.1rem;
-  font-weight: 500;
-} */
-
-/* .menu__link {
-  text-decoration: none;
-  color: var(--color-gray);
-  font-size: 1.6rem;
-} */
-
-/* .home__link--color {
-  color: var(--color-gray);
-} */
-
-/* .menu__link--active {
-  padding: 1.5rem 4rem;
-  background: var(--color-pink);
-  color: var(--color-white);
-  border-radius: 5rem;
-  font-weight: 600;
-} */
-
-/* .home__menu {
-  display: none;
-} */
 
 .menu {
   margin-right: 6rem;
@@ -201,7 +162,7 @@ hr {
 }
 
 .five:hover ~ hr {
-  margin-left: 77%;
+  margin-left: 78%;
 }
 
 /* -----End of Header----- */
@@ -221,7 +182,7 @@ hr {
 
 .consultant__title {
   font-size: 4.8rem;
-  color: var(--color-bluedark);
+  color: var(--color-darkblue);
   font-weight: 600;
 }
 
@@ -245,7 +206,7 @@ hr {
 
 /* ---------core---------- */
 .core-services {
-  margin-top: 13rem;
+  margin-top: 10rem;
 }
 
 .core__beauty {
@@ -260,7 +221,7 @@ hr {
 }
 
 .core__title {
-  color: var(--color-bluedark);
+  color: var(--color-darkblue);
   text-align: center;
   font-size: 3.6rem;
   font-weight: 600;
@@ -339,7 +300,7 @@ hr {
   height: 96rem;
   margin-left: 76rem;
   margin-top: -23rem;
-  background-size: 115rem 99rem;
+  background-size: 100% 100%;
 }
 
 .aboutus__video {
@@ -523,9 +484,9 @@ hr {
   background-repeat: no-repeat;
   height: 115rem;
   margin-top: -3rem;
-  background-size: 152rem 120rem;
+  background-size: 82% 100%;
 }
-.expert {
+.expert1 {
   display: flex;
   justify-content: space-between;
 }
@@ -579,7 +540,6 @@ hr {
 /* input */
 
 input {
-
   width: 24rem;
   height: 6.1rem;
   border-radius: 1.5rem;
@@ -615,7 +575,6 @@ input {
 .specifications__btn {
   margin-top: 5rem;
   margin-left: 2rem;
-  
 }
 
 .specifications__btn:hover {
@@ -624,20 +583,19 @@ input {
 }
 
 .style-input-msg {
- display: flex;
- justify-content: center;
+  display: flex;
+  justify-content: center;
   align-items: center;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   font-size: 2rem;
   letter-spacing: 0.5px;
   color: #de463b;
- margin-bottom: 15px;
-
+  margin-bottom: 15px;
 }
 
 .sing-msg {
   font-size: 1.5rem;
-  font-family: 'Poppins';
+  font-family: "Poppins";
   display: flex;
   justify-content: center;
   text-align: center;
@@ -646,21 +604,16 @@ input {
   margin-top: 15px;
   margin-left: -30rem;
   text-shadow: 2px 0 4px rgb(37, 54, 10);
-  
 }
-
-
-
-
 
 /* Footer */
 
 .footer {
   background-image: url(../Img/back5.jpg);
   background-repeat: no-repeat;
-  height: 93rem;
-  background-size: cover;
-  margin-top: 9rem;
+  height: 73rem;
+  background-size: 100% 100%;
+  margin-top: 15rem;
 }
 
 .footer__top {
@@ -668,7 +621,7 @@ input {
   justify-content: space-between;
   align-items: center;
   color: var(--color-blue-footer);
-  padding-top: 29rem;
+  padding-top: 19rem;
 }
 
 .logo1__img {
@@ -721,7 +674,7 @@ input {
 }
 
 .footer__down {
-  margin-top: 22rem;
+  margin-top: 16rem;
   display: flex;
   justify-content: space-between;
 }
@@ -804,17 +757,14 @@ input {
 }
 
 .footer__flash {
-  margin-left: 174rem;
   margin-top: -19rem;
   cursor: pointer;
 }
 
-
-
-
 .footer__upflash {
   position: fixed;
-  top: 60rem;
+  bottom: 5rem;
+  right: 1rem;
   text-decoration: none;
   text-align: center;
   line-height: 5rem;
@@ -1029,5 +979,1043 @@ input {
     background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%,
       110% 10%;
     background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+  }
+}
+/* ---------------- */
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: var(--color-darkblue);
+}
+
+/* ----------Responsive---------- */
+@media (max-width: 1480px) {
+  .container {
+    padding-inline: 7%;
+  }
+
+  .nav {
+    left: 64%;
+  }
+
+  .menu {
+    margin-right: 2rem;
+  }
+
+  .clinic__img {
+    width: 120%;
+  }
+
+  .core-services {
+    margin-top: 8rem;
+  }
+
+  .box {
+    width: 33rem;
+  }
+
+  .about {
+    margin-left: 48rem;
+    margin-top: -19rem;
+  }
+
+  .play {
+    margin-right: 5rem;
+  }
+
+  .boxes1 {
+    width: 33rem;
+    height: 52rem;
+  }
+
+  .boxes1__img {
+    margin-top: 4rem;
+    margin-left: 9.5rem;
+  }
+
+  .boxes1__desc {
+    margin-left: 3.5rem;
+  }
+
+  .specifications {
+    display: table;
+  }
+
+  .contactus__form {
+    margin-left: 8rem;
+  }
+
+  input {
+    width: 22rem;
+  }
+
+  .contact__input {
+    width: 48rem;
+  }
+
+  .inquiry__input {
+    width: 48rem;
+  }
+
+  .contact__img {
+    width: 90%;
+    margin-left: 6rem;
+  }
+
+  .footer {
+    height: 56rem;
+    margin-top: 19rem;
+  }
+
+  .footer__top {
+    padding-top: 12rem;
+  }
+
+  .footer__down {
+    margin-top: 8rem;
+  }
+}
+
+/* -------- */
+@media (max-width: 1220px) {
+  .header__main {
+    background-size: 98% 88%;
+  }
+
+  hr {
+    margin: -5.9rem 0;
+    height: 4rem;
+  }
+
+  .menu__link {
+    font-size: 1.4rem;
+  }
+
+  .nav {
+    left: 72%;
+  }
+
+  .menu {
+    margin-right: -7rem;
+  }
+
+  .main {
+    margin-top: 17rem;
+  }
+
+  .consultant {
+    margin-left: 6rem;
+  }
+
+  .core-services {
+    margin-top: -3rem;
+  }
+
+  .consultant__title {
+    font-size: 3.8rem;
+  }
+
+  .consultant__desc {
+    width: 34rem;
+  }
+
+  .btn {
+    padding: 1.8rem 3rem;
+    font-size: 1.4rem;
+  }
+
+  .clinic {
+    margin-right: 22.7rem;
+  }
+
+  .clinic__img {
+    width: 38rem;
+  }
+
+  .consultant {
+    margin-top: 1rem;
+    margin-left: 10rem;
+  }
+
+  .box {
+    height: 38.8rem;
+    width: 25rem;
+  }
+
+  .box__img {
+    margin-top: 3rem;
+  }
+
+  .box__title {
+    margin-top: 5rem;
+  }
+
+  .box__desc {
+    font-size: 1.3rem;
+    width: 22rem;
+    margin-top: 2rem;
+  }
+
+  .core__title {
+    font-size: 3rem;
+    width: 34rem;
+  }
+
+  .core__desc {
+    width: 62rem;
+  }
+
+  .aboutus__title {
+    font-size: 3rem;
+  }
+
+  .about {
+    margin-left: 31rem;
+  }
+
+  .video {
+    margin-right: 3rem;
+    margin-top: 5rem;
+  }
+
+  .video__img {
+    width: 41rem;
+  }
+
+  .play__img {
+    width: 5rem;
+  }
+
+  .watch {
+    margin-top: -3.5rem;
+    font-size: 1.5rem;
+  }
+
+  .teams__title {
+    font-size: 3rem;
+  }
+
+  .boxes1 {
+    width: 25rem;
+    height: 41rem;
+  }
+
+  .boxes1__img {
+    margin-top: 2.2rem;
+    width: 12rem;
+    margin-left: 6.5rem;
+  }
+
+  .boxes1__title {
+    font-size: 1.4rem;
+    margin-top: 3.5rem;
+  }
+
+  .boxes1__name {
+    font-size: 1.7rem;
+  }
+
+  .boxes1__desc {
+    font-size: 1.3rem;
+    margin-left: -0.5rem;
+  }
+
+  .socialmedia__icon i {
+    margin: 1.1rem;
+    margin-top: -1rem;
+    font-size: 2.5rem;
+  }
+
+  .contactus__title {
+    font-size: 3rem;
+    word-spacing: 0;
+  }
+
+  input {
+    width: 18rem;
+    height: 5rem;
+  }
+
+  .contact__input {
+    width: 40rem;
+    height: 5rem;
+  }
+
+  .inquiry__input {
+    width: 40rem;
+    height: 18rem;
+  }
+
+  .contactus__form {
+    margin-left: -4rem;
+  }
+
+  .contact__img {
+    width: 31rem;
+  }
+
+  .contact__img {
+    width: 39rem;
+    margin-left: 1rem;
+  }
+
+  .style-input-msg {
+    font-size: 1.5rem;
+  }
+
+  .footer {
+    margin-top: 5rem;
+    height: 52rem;
+  }
+
+  .footer__top {
+    padding-top: 11rem;
+  }
+
+  .logo1__desc {
+    font-size: 1.4rem;
+    width: 30rem;
+  }
+
+  .footer__address {
+    font-size: 1.2rem;
+  }
+
+  .footer__tel {
+    font-size: 1.2rem;
+  }
+
+  .footer__mail {
+    font-size: 1.2rem;
+  }
+
+  .footer__pages {
+    margin-right: 22rem;
+  }
+
+  .pages__title {
+    font-size: 1.7rem;
+  }
+
+  .information {
+    margin-top: -3.5rem;
+  }
+
+  .information__title {
+    font-size: 1.7rem;
+    margin-left: -20.2rem;
+  }
+
+  .information_link,
+  .pages__link {
+    font-size: 1.5rem;
+  }
+
+  .footer__down {
+    margin-top: 6rem;
+  }
+
+  .wrapper .icon span {
+    height: 43px;
+    width: 43px;
+  }
+
+  .wrapper .icon .tooltip {
+    font-size: 13px;
+  }
+
+  .wrapper .icon span i {
+    font-size: 23px;
+    line-height: 25px;
+  }
+
+  .footer__right {
+    margin-right: 3rem;
+  }
+
+  .footer__right__desc {
+    font-size: 1.4rem;
+  }
+
+  .footer__mail {
+    margin-left: 15rem;
+  }
+
+  .information__menu {
+    margin-left: -19rem;
+  }
+
+  .footer__upflash {
+    font-size: 2.5rem;
+    right: 0.1rem;
+  }
+}
+
+/* ------- */
+@media (max-width: 925px) {
+  .container {
+    padding-inline: 3%;
+  }
+  .nav {
+    left: 71%;
+  }
+
+  .menu {
+    margin-right: -6rem;
+  }
+
+  .consultant__title {
+    font-size: 3rem;
+  }
+
+  .consultant {
+    margin-left: 2rem;
+  }
+
+  .consultant__desc {
+    font-size: 1.4rem;
+    width: 27rem;
+  }
+
+  .btn {
+    padding: 1.4rem 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  .core__mainservices {
+    font-size: 1.4rem;
+  }
+
+  .core__title {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+
+  .core__desc {
+    width: 54rem;
+    font-size: 1.4rem;
+  }
+
+  .box {
+    height: 33.8rem;
+    width: 22rem;
+  }
+
+  .box__img {
+    margin-top: 2rem;
+    width: 13.5rem;
+  }
+
+  .box__title {
+    margin-top: 4rem;
+    font-size: 1.5rem;
+  }
+
+  .box__desc {
+    font-size: 1.2rem;
+    width: 16rem;
+    margin-top: 2rem;
+  }
+
+  .aboutus__us {
+    font-size: 1.4rem;
+  }
+
+  .aboutus__title {
+    font-size: 2.5rem;
+  }
+
+  .aboutus__desc,
+  .aboutus__desc1 {
+    font-size: 1.5rem;
+    width: 33rem;
+  }
+
+  .about {
+    margin-left: 19rem;
+  }
+
+  .aboutus__video {
+    margin-top: -64rem;
+  }
+
+  .play {
+    margin-right: 3rem;
+    margin-top: 0.4rem;
+  }
+
+  .play__img {
+    width: 4rem;
+  }
+
+  .watch {
+    margin-top: -2.8rem;
+    font-size: 1.3rem;
+    margin-left: 5.5rem;
+  }
+
+  .teams__subject {
+    font-size: 1.4rem;
+  }
+
+  .teams__title {
+    font-size: 2.5rem;
+  }
+
+  .teames__desc {
+    margin-top: 2rem;
+  }
+
+  .expert {
+    margin-top: 7rem;
+  }
+
+  .boxes1 {
+    width: 22rem;
+    height: 38rem;
+  }
+
+  .boxes1__img {
+    margin-top: 2.2rem;
+    margin-left: 5.8rem;
+    width: 10.5rem;
+  }
+
+  .boxes1__title {
+    font-size: 1.3rem;
+    margin-top: 2.5rem;
+  }
+
+  .boxes1__name {
+    font-size: 1.6rem;
+  }
+
+  .boxes1__desc {
+    font-size: 1.1rem;
+    margin-left: -0.4rem;
+    width: 23.5rem;
+  }
+  .socialmedia__icon i {
+    margin-top: -3rem;
+    font-size: 2.3rem;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .contactus__subject {
+    font-size: 1.4rem;
+  }
+
+  .contactus__title {
+    font-size: 2.5rem;
+    width: 26rem;
+  }
+
+  .contact__img {
+    width: 33rem;
+    margin-left: 0rem;
+  }
+
+  .contactus__desc {
+    font-size: 1.4rem;
+  }
+
+  input {
+    width: 16rem;
+  }
+
+  .contact__input {
+    width: 36rem;
+  }
+
+  .inquiry__input {
+    width: 36rem;
+  }
+
+  .footer {
+    height: 48rem;
+  }
+
+  .wrapper .icon .tooltip {
+    font-size: 10px;
+  }
+
+  .wrapper .icon span {
+    height: 39px;
+    width: 39px;
+  }
+
+  .wrapper .icon span i {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  .footer__right__desc {
+    font-size: 1.2rem;
+  }
+
+  .footer__right {
+    margin-right: 3rem;
+  }
+
+  .footer__down {
+    margin-top: 5rem;
+  }
+
+  .footer__upflash {
+    font-size: 1.6rem;
+    right: 0.1rem;
+  }
+
+  .footer__top {
+    padding-top: 9rem;
+  }
+
+  .logo1__desc {
+    font-size: 1.3rem;
+    width: 28rem;
+  }
+
+  .footer__address {
+    font-size: 1.1rem;
+  }
+
+  .footer__tel {
+    font-size: 1.1rem;
+  }
+
+  .footer__mail {
+    font-size: 1.1rem;
+  }
+
+  .footer__mail {
+    margin-left: 14rem;
+  }
+
+  .logo1__img {
+    width: 24rem;
+  }
+
+  .pages__title {
+    font-size: 1.6rem;
+  }
+
+  .information_link,
+  .pages__link {
+    font-size: 1.4rem;
+  }
+
+  .information__title {
+    font-size: 1.6rem;
+    margin-left: -19.2rem;
+  }
+
+  .information__menu {
+    margin-left: -19rem;
+  }
+}
+
+/* ------- */
+@media (max-width: 768px) {
+  hr {
+    display: none;
+  }
+
+  .nav {
+    transform: none;
+    left: 60%;
+  }
+
+  .hamburger {
+    display: block;
+    margin-top: 3rem;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .menu {
+    display: flex;
+    position: fixed;
+    left: -100%;
+    top: 110px;
+    gap: 0;
+    flex-direction: column;
+    background-color: #e4e7ff;
+    width: 100%;
+    text-align: center;
+    transition: 1s;
+    height: 100vh;
+    z-index: 999999;
+  }
+
+  .menu__item {
+    margin: 8px 0;
+  }
+
+  .menu.active {
+    left: 0;
+  }
+
+  .menu__link {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
+  .menu__link:hover {
+    color: var(--color-pink);
+  }
+
+  .menu__item {
+    border-bottom: 1px dashed rgb(229, 172, 235);
+    line-height: 0rem;
+  }
+
+  .five {
+    border-bottom: none;
+  }
+
+  .header__main {
+    background-size: 109% 88%;
+  }
+
+  .footer__upflash {
+    display: none;
+  }
+
+  .main {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 8rem;
+  }
+
+  .consultant__title {
+    font-size: 2rem;
+  }
+
+  .consultant__desc {
+    font-size: 1.4rem;
+    width: 26rem;
+    text-align: center;
+  }
+
+  .consultant__btn {
+    margin-left: 5.5rem;
+    margin-top: 3rem;
+  }
+
+  .clinic {
+    margin-right: 0.7rem;
+    margin-top: 6rem;
+  }
+
+  .clinic__img {
+    width: 35rem;
+  }
+
+  .core__title {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+
+  .core__desc {
+    width: 36rem;
+    font-size: 1.2rem;
+  }
+
+  .box {
+    height: 44.8rem;
+    width: 30rem;
+  }
+
+  .box__img {
+    margin-top: 4rem;
+    width: 17.5rem;
+  }
+
+  .box__title {
+    margin-top: 5rem;
+    font-size: 2rem;
+  }
+
+  .box__desc {
+    font-size: 1.5rem;
+    width: 19rem;
+  }
+
+  .boxes {
+    flex-direction: column;
+  }
+
+  .core-services {
+    margin-top: 1rem;
+  }
+
+  .about {
+    margin-left: -1rem;
+  }
+
+  .aboutus__video {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .learn {
+    flex-direction: column;
+    margin-top: 4rem;
+    align-items: center;
+  }
+
+  .aboutus__title {
+    font-size: 2rem;
+  }
+
+  .aboutus {
+    text-align: center;
+  }
+
+  .aboutus__desc,
+  .aboutus__desc1 {
+    font-size: 1.3rem;
+  }
+
+  .play {
+    margin-right: 8rem;
+    margin-top: 4.4rem;
+  }
+
+  .watch {
+    margin-left: 16.5rem;
+    font-size: 1.2rem;
+  }
+
+  .video {
+    margin-right: 0rem;
+    margin-top: -1rem;
+  }
+
+  .professional {
+    margin-top: 3rem;
+  }
+
+  .teams__title {
+    font-size: 2rem;
+  }
+
+  .teames__desc {
+    font-size: 1.4rem;
+  }
+
+  .boxes1 {
+    width: 30rem;
+    height: 47rem;
+    margin-bottom: 6rem;
+  }
+
+  .boxes1__img {
+    margin-top: 5.2rem;
+    margin-left: 7.8rem;
+    width: 14.5rem;
+  }
+
+  .boxes1__desc {
+    font-size: 1.3rem;
+    margin-left: 3.6rem;
+    width: 23.5rem;
+  }
+
+  .expert {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .socialmedia {
+    margin-top: 6rem;
+  }
+
+  .boxes1__name {
+    margin-bottom: 2rem;
+  }
+
+  .expert1 {
+    flex-direction: column-reverse;
+    margin-top: 2rem;
+    align-items: center;
+  }
+
+  .contact {
+    height: 142rem;
+    background-size: 100% 100%;
+  }
+
+  .contactus {
+    margin-top: 23rem;
+  }
+
+  .contactus__title {
+    font-size: 2rem;
+    width: 24rem;
+    margin-bottom: 1rem;
+  }
+
+  .contactus__desc {
+    font-size: 1.3rem;
+  }
+
+  input {
+    width: 14rem;
+    height: 4.5rem;
+    font-size: 1.3rem;
+  }
+
+  .contact__input {
+    width: 32rem;
+    height: 4.5rem;
+  }
+
+  .inquiry__input {
+    width: 32rem;
+    height: 16rem;
+  }
+
+  .style-input-msg {
+    font-size: 1.2rem;
+  }
+
+  .inquiry__input {
+    font-size: 1.4rem;
+  }
+
+  .contactus__form {
+    margin-left: 0rem;
+    margin-top: auto;
+  }
+
+  .contact__img {
+    margin-top: auto;
+    margin-top: 5rem;
+  }
+
+  .footer {
+    height: 117rem;
+    margin-top: -9rem;
+  }
+
+  .footer__top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer__logo {
+    margin-bottom: 5rem;
+    margin-top: 4rem;
+  }
+
+  .footer__pages {
+    margin-right: 0rem;
+  }
+
+  .information {
+    margin-left: 32rem;
+    margin-top: 5rem;
+  }
+
+  .footer__down {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 9rem;
+  }
+
+  .footer__right__desc {
+    margin-left: 5rem;
+    font-size: 1.2rem;
+  }
+
+  .footer__flash {
+    display: none;
+  }
+
+  .consultant {
+    margin-left: 0rem;
+  }
+
+  .information__title {
+    font-size: 2rem;
+    margin-left: -20.2rem;
+  }
+
+  .pages__title {
+    font-size: 2rem;
+  }
+
+  .logo__img {
+    width: 22rem;
+  }
+
+  .contactus__title {
+    margin-bottom: -2rem;
+    line-height: 2.5rem;
+  }
+}
+
+/* ----------- */
+@media (max-width: 420px) {
+  .menu__link {
+    font-size: 1.7rem;
+  }
+
+  .btn {
+    padding: 1.3rem 1.4rem;
+    font-size: 1.4rem;
+    font-weight: unset;
+  }
+
+  .consultant__btn {
+    margin-left: 6.5rem;
+  }
+
+  .clinic__img {
+    width: 34rem;
+  }
+
+  .core__desc {
+    width: 33rem;
+  }
+
+  .core-services {
+    margin-top: -1rem;
+  }
+
+  .box {
+    height: 43.8rem;
+    width: 28rem;
+  }
+
+  .footer__right {
+    margin-right: 2rem;
+  }
+
+  .footer__right__desc {
+    font-size: 1rem;
   }
 }

@@ -16,7 +16,10 @@
       src="https://kit.fontawesome.com/1ea5430a3e.js"
       crossorigin="anonymous"
     ></script>
-    <script src="https://kit.fontawesome.com/52fe89a63a.js" crossorigin="anonymous"></script>
+    <script
+      src="https://kit.fontawesome.com/52fe89a63a.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <section class="header__main">
@@ -29,7 +32,7 @@
           <nav class="nav">
             <ul class="menu">
               <li class="menu__item one">
-                <a href="#home" class="menu__link home__link--color">Home</a>
+                <a href="#home" class="menu__link ">Home</a>
               </li>
               <li class="menu__item two">
                 <a href="#about" class="menu__link">About</a>
@@ -41,12 +44,17 @@
                 <a href="#gallery" class="menu__link">Gallery</a>
               </li>
               <li class="menu__item five">
-                <a href="#contact" class="menu__link menu__link--active"
+                <a href="#contact" class="menu__link "
                   >Contact</a
                 >
               </li>
               <hr />
             </ul>
+            <div class="hamburger">
+              <span class="bar"></span>
+              <span class="bar"></span>
+              <span class="bar"></span>
+            </div>
           </nav>
         </div>
       </div>
@@ -86,7 +94,7 @@
     <section class="core-services">
       <!----------Core----------->
       <div class="container">
-        <div class="core__beauty">
+        <div class="core__beauty" id="service">
           <p class="core__mainservices">Main Services</p>
           <h1 class="core__title">Learn services to focus on your beauty</h1>
           <p class="core__desc">
@@ -137,7 +145,7 @@
       <!----------End of Core----------->
 
       <!---------About--------->
-      <div class="about"></div>
+      <div class="about" id="about"></div>
       <div class="container">
         <div class="aboutus__video">
           <div
@@ -186,8 +194,8 @@
 
     <!-- ---------Professional Teams--------- -->
 
-    <section class="professional">
-      <div class="teams">
+    <section class="professional" id="gallery">
+      <div class="teams container">
         <p class="teams__subject">Professional Teams</p>
         <h1 class="teams__title">The Professional expert</h1>
         <p class="teames__desc">
@@ -317,8 +325,8 @@
     <!-- ---------End of Professional Teams--------- -->
 
     <!-- ----------Contact us----------- -->
-    <section class="contact">
-      <div class="container expert">
+    <section class="contact" id="contact">
+      <div class="container expert1">
         <div class="contact__photot">
           <img
             class="contact__img"
@@ -348,7 +356,6 @@
           <form action="#" class="contact__form">
             <div class="specifications">
               <input
-               
                 class="specifications__input"
                 type="text"
                 placeholder="First name"
@@ -356,13 +363,8 @@
                 src="Img/unsplash.png"
                 alt="unsplash"
                 class="video__img"
-                data-aos="fade-right"
-                data-aos-delay="50"
-                data-aos-duration="1500"
-            
               />
               <input
-
                 class="specifications__input last-input"
                 type="text"
                 placeholder="Last name"
@@ -372,7 +374,6 @@
             </div>
 
             <input
-          
               class="contact__input"
               type="text"
               placeholder="Email address"
@@ -381,7 +382,6 @@
             <span class="email-msg style-input-msg"></span>
 
             <input
-              
               class="contact__input subject-msg"
               type="text"
               placeholder="Subject message"
@@ -390,7 +390,6 @@
             <span class="subj-msg style-input-msg"></span>
 
             <textarea
-             
               class="inquiry__input"
               type="text"
               placeholder="Your inquiry here"
@@ -398,7 +397,9 @@
             ></textarea>
             <span class="inquriy-msg style-input-msg"></span>
 
-            <button id="sprcial-button" class="specifications__btn btn">Send Message</button>
+            <button id="sprcial-button" class="specifications__btn btn">
+              Send Message
+            </button>
             <span class="sing-msg"></span>
           </form>
         </div>
@@ -512,28 +513,30 @@
         </div>
       </div>
       <div class="footer__flash">
-        <a href="#home" class="footer__upflash"><i class="fa-solid fa-circle-chevron-up"></i></a>
+        <a href="#about" class="footer__upflash"
+          ><i class="fa-solid fa-circle-chevron-up"></i
+        ></a>
       </div>
     </footer>
     <!-- ----------Footer---------- -->
+
+    <!-- --------Script--------- -->
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
     </script>
     <script src="JS/Scroll.js"></script>
-    <script src="/JS/vanilla-tilt.min.js"></script>
+    <script src="JS/vanilla-tilt.min.js"></script>
     <script>
       VanillaTilt.init(document.querySelectorAll(".boxes1"), {
         max: 25,
         speed: 400,
       });
     </script>
-<<<<<<< HEAD
-    <script src="./JS/index.js"></script>
-    
-=======
+    <script src="JS/index.js"></script>
     <script src="JS/btn.js"></script>
->>>>>>> c8e0d7b78b0bc2cb1494faf8a073cfcd448bfd34
+    <script src="JS/hamburger.js"></script>
+    <!-- --------End of Script--------- -->
   </body>
 </html>
