@@ -570,6 +570,7 @@ input {
   padding: 2rem 3rem;
   font-size: 1.7rem;
   margin-left: 2rem;
+  
 }
 
 .specifications__btn {
@@ -604,6 +605,10 @@ input {
   margin-top: 15px;
   margin-left: -30rem;
   text-shadow: 2px 0 4px rgb(37, 54, 10);
+}
+
+.inquriy-msg {
+  margin-top: 1.5rem;
 }
 
 /* Footer */
