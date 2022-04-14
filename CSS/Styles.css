@@ -555,6 +555,10 @@ input {
   color: var(--color-placeholder);
 }
 
+.name__family {
+  display: flex;
+}
+
 .contact__input {
   width: 52rem;
   height: 6.2rem;
@@ -570,7 +574,6 @@ input {
   padding: 2rem 3rem;
   font-size: 1.7rem;
   margin-left: 2rem;
-  
 }
 
 .specifications__btn {
@@ -588,7 +591,7 @@ input {
   justify-content: center;
   align-items: center;
   font-family: "Poppins";
-  font-size: 2rem;
+  font-size: 1.5rem;
   letter-spacing: 0.5px;
   color: #de463b;
   margin-bottom: 15px;
@@ -1089,6 +1092,10 @@ input {
   .footer__down {
     margin-top: 8rem;
   }
+
+  .sing-msg {
+    margin-left: -25.2rem;
+  }
 }
 
 /* -------- */
@@ -1275,7 +1282,7 @@ input {
   }
 
   .style-input-msg {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .footer {
@@ -1363,6 +1370,11 @@ input {
   .footer__upflash {
     font-size: 2.5rem;
     right: 0.1rem;
+  }
+
+  .sing-msg {
+    margin-left: -22.5rem;
+    font-size: 1.3rem;
   }
 }
 
@@ -1539,6 +1551,10 @@ input {
     width: 16rem;
   }
 
+  .style-input-msg {
+    font-size: 1rem;
+  }
+
   .contact__input {
     width: 36rem;
   }
@@ -1627,6 +1643,11 @@ input {
 
   .information__menu {
     margin-left: -19rem;
+  }
+
+  .sing-msg {
+    margin-left: -21rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -1904,7 +1925,7 @@ input {
   }
 
   .style-input-msg {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
   }
 
   .inquiry__input {
@@ -1981,6 +2002,11 @@ input {
     margin-bottom: -2rem;
     line-height: 2.5rem;
   }
+
+  .sing-msg {
+    margin-left: -16.5rem;
+    font-size: 1.2rem;
+  }
 }
 
 /* ----------- */
@@ -2022,5 +2048,10 @@ input {
 
   .footer__right__desc {
     font-size: 1rem;
+  }
+
+  .sing-msg {
+    margin-left: -18rem;
+    font-size: 1.2rem;
   }
 }
