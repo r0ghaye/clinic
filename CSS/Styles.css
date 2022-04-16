@@ -614,174 +614,10 @@ input {
   margin-top: 1.5rem;
 }
 
-
-
-
-li {
-  list-style-type: none;
-  text-align: justify;
-}
-
-a {
-  text-decoration: none;
-}
-
-
-
-/* icon */
-
-.icon {
-  width: 40px;
-  height:40px;
-}
-
-
-.icom--primary {
-  fill: gray;
-}
-
-.icon--container {
-  background: #f3f9f3;
-  width: 64px;
-  height: 64px;
-  border-radius: 100%;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-
-}
-
-.icon--white {
- fill: #fff;
-}
-
-/* collapsible */
-
-
-.collapsible__header {
-  display: flex;
-  justify-content: space-between;
-  
-}
-
-.collapsible__heading {
- margin: 0;
-  color: var(--color-blue-footer);
-  font-size: 1.6rem;
-  font-family: "Poppins";
-  line-height: 2.4rem;
-  font-weight: 400;
-  letter-spacing: 10%;
-}
-
-.collapsible__chevron {
-  transform: rotate(-90deg);
-  transition: transform 0.3s;
-}
-
-.collapsible__content {
-  max-height: 0;
-  overflow: hidden;
-  opacity: 0;
-  transition: all .3s;
-}
-
-.collapsible--expanded  .collapsible__chevron {
-  transform: rotate(0);
-}
-
-.collapsible--expanded .collapsible__content {
-  max-height: 100vh;
-  opacity: 1;
-}
-
-
-
-  .footer {
-      background: #232323;
-    }
-    
-    .footer a {
-      color: #777;
-      transition: color 0.3s;
-    }
-    
-    .footer a:hover {
-      color: #fff;
-    }
-    
-    .footer__section {
-      padding: 2rem;
-      border-bottom: 1px solid #393939;
-    }
-    
-    .footer__section .list {
-      margin: 0;
-    }
-    
-    .footer__heading {
-      text-transform: uppercase;
-      font-weight: 600;
-    }
-    
-    .footer__brand {
-      margin-top: 5rem;
-      text-align: center;
-    }
-    
-    .footer__brand img {
-      /* TODO: Consider refactoring this and applying it to 
-      all images. */
-      width: 100%;
-      max-width: 230px;
-    }
-    
-    .footer__copyright {
-      font-size: 2.1rem;
-      color: #fff;
-      opacity: 0.3;
-    }
-
-
-    callout {
-      padding: 4rem;
-      border-radius: 5px;
-    }
-    
-    .callout--primary {
-      background: var(--color-primary);
-      color: #fff;
-    }
-    
-    .callout__heading {
-      color: #fff;
-      margin-top: 0;
-      font-size: 3rem;
-    }
-    
-    .callout .btn {
-      justify-self: center;
-      align-self: center;
-    }
-    
-    .callout__content {
-      text-align: center;
-    }
-
-
-
-
-
-
-
-
-
-
-
    
     /* Footer */
     
-    /*.footer {
+    .footer {
       background-image: url(../img/back5.jpg);
       background-repeat: no-repeat;
       height: 73rem;
@@ -951,8 +787,8 @@ a {
     
     .wrapper {
       display: flex;
-      margin-top: 5rem !important;
-      margin-left: 30rem !important;
+      margin-top: rem !important;
+      margin-left: -100rem !important;
     }
     
     .wrapper .icon {
