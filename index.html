@@ -413,11 +413,11 @@
     <!-- ----------End of Contact us----------- -->
 
     <!-- ----------Footer---------- -->
-    <footer class="footer">
+    <!--<footer class="footer">
       <div class="container">
-        <div class="footer__top">
+        <div class="footer__top"> 
           <div class="footer__logo">
-            <img class="logo1__img" src="Img/logo-pink.png" alt="logo" />
+            <img class="logo1__img" src="./Img/Footer.png" alt="logo" />
             <p class="logo1__desc">
               <b>Beautice</b> is a Beauty Clinic WordPress Theme.
             </p>
@@ -427,10 +427,9 @@
             <p class="footer__tel">+5215698966.</p>
             <p class="footer__mail">mail@company.com</p>
           </div>
-
           <div class="footer__pages">
             <h2 class="pages__title">Pages</h2>
-
+        <div class="collapsible__content">
             <ul class="pages__menu">
               <li class="pages__item">
                 <i class="fa fa-caret-right"
@@ -459,7 +458,7 @@
               </li>
             </ul>
           </div>
-
+        </div>
           <div class="information">
             <h2 class="information__title">Informations</h2>
             <ul class="information__menu">
@@ -488,7 +487,8 @@
             </ul>
           </div>
         </div>
-
+        </div>
+      </div>
         <div class="footer__down">
           <div class="icons">
             <div class="footer__icons wrapper">
@@ -522,9 +522,139 @@
           ><i class="fa-solid fa-circle-chevron-up"></i
         ></a>
       </div>
-    </footer>
+    </footer> 
+
     <!-- ----------Footer---------- -->
 
+    <footer class="block blok--dark footer">
+      <div class="container grid footer__sections footer__top">
+      <section class="collapsible collapsible--expanded footer__section">
+          <header class="collapsible__header">
+              <h2 class="collapsible__heading footer__heading pages__title">Pages</h2>
+                  <svg class="icon icon--white collapsible__chevron">
+                    <use xlink:href="../img/sprite.svg#chevron"></use>
+                  </svg>
+                </span>
+                
+          </header>
+          <div class="collapsible__content">
+          <ul class="pages__menu">
+            <li class="pages__item">
+              <i class="fa fa-caret-right"
+                ><a href="#" class="pages__link">About</a></i
+              >
+            </li>
+            <li class="pages__item">
+              <i class="fa fa-caret-right flash-left"
+                ><a href="#" class="pages__link">Home</a></i
+              >
+            </li>
+            <li class="pages__item">
+              <i class="fa fa-caret-right"
+                ><a href="#" class="pages__link">Services</a></i
+              >
+            </li>
+            <li class="pages__item">
+              <i class="fa fa-caret-right"
+                ><a href="#" class="pages__link">Gallery</a></i
+              >
+            </li>
+            <li class="pages__item">
+              <i class="fa fa-caret-right"
+                ><a href="#" class="pages__link">Team</a></i
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="collapsible collapsible--expanded footer__section">
+        <header class="collapsible__header">
+            <h2 class="collapsible__heading footer__heading information__title ">Informations</h2>
+                <svg class="icon icon--white collapsible__chevron">
+                  <use xlink:href="../img/sprite.svg#chevron"></use>
+                </svg>
+              </span>  
+        </header>
+      <div class="collapsible__content">
+        <ul class="information__menu">
+          <li>
+            <i class="fa fa-caret-right"
+              ><a href="#" class="information_link"
+                >Teams & conditions</a
+              ></i
+            >
+          </li>
+          <li>
+            <i class="fa fa-caret-right"
+              ><a href="#" class="information_link">Privacy policy</a></i
+            >
+          </li>
+          <li>
+            <i class="fa fa-caret-right"
+              ><a href="#" class="information_link">Blog</a></i
+            >
+          </li>
+          <li>
+            <i class="fa fa-caret-right"
+              ><a href="#" class="information_link">Contact</a></i
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  </div>
+      
+      <section class="footer__brand">
+          <div class="footer__logo">
+              <img src="../img/Footer.png" alt=""> 
+              <p class="logo1__desc">
+                <b>Beautice</b> is a Beauty Clinic WordPress Theme.
+              </p>
+              <address class="footer__address">
+                Baker Steet101,NY,United States.
+              </address>
+              <p class="footer__tel">+5215698966.</p>
+              <p class="footer__mail">mail@company.com</p>
+            </div>
+      </section>
+      <div class="footer__down">
+          <div class="icons">
+            <div class="footer__icons wrapper">
+              <div class="icon facebook">
+                <div class="tooltip">Facebook</div>
+                <span><i class="fa fa-facebook-f"></i></span>
+              </div>
+              <div class="icon twitter">
+                <div class="tooltip">Twitter</div>
+                <span><i class="fa fa-twitter"></i></span>
+              </div>
+              <div class="icon youtube">
+                <div class="tooltip">Youtube</div>
+                <span><i class="fa fa-youtube"></i></span>
+              </div>
+              <div class="icon instagram">
+                <div class="tooltip">Instagram</div>
+                <span><i class="fa fa-instagram"></i></span>
+              </div>
+            </div>
+          </div>
+          <div class="footer__right">
+              <p class="footer__right__desc">
+                © AltDesain Studio 2021 - All right reserved.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="footer__flash">
+          <a href="#about" class="footer__upflash"
+            ><i class="fa-solid fa-circle-chevron-up"></i
+          ></a>
+        </div>
+   </div>
+  </footer>
+
+    
     <!-- --------Script--------- -->
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -542,6 +672,7 @@
     <script src="JS/index.js"></script>
     <script src="JS/btn.js"></script>
     <script src="JS/hamburger.js"></script>
+    <script src="Js/main.js"></script>
     <!-- --------End of Script--------- -->
   </body>
 </html>
