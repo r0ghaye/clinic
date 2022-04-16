@@ -1,16 +1,17 @@
-const usernameInput = document.querySelector(".specifications__input");
-const userLastInput = document.querySelector(".last-input");
-const nameMsg = document.querySelector(".name-msg");
-const lastNamemsg = document.querySelector(".lastname-msg");
-const contactInput = document.querySelector(".contact__input");
-const emailMsg = document.querySelector(".email-msg");
-const subJectmsg = document.querySelector(".subj-msg");
-const subjectContact = document.querySelector(".subject-msg");
-const inquiryInput = document.querySelector(".inquiry__input");
-const inquiryMsg = document.querySelector(".inquriy-msg");
-const buttonInput = document.querySelector(".specifications__btn");
-const singBtn = document.querySelector(".sing-msg");
-const form = document.querySelector(".contact__form");
+const $ = query => document.querySelector(query);
+const usernameInput = $(".specifications__input");
+const userLastInput = $(".last-input");
+const nameMsg = $(".name-msg");
+const lastNamemsg = $(".lastname-msg");
+const contactInput = $(".contact__input");
+const emailMsg = $(".email-msg");
+const subJectmsg = $(".subj-msg");
+const subjectContact = $(".subject-msg");
+const inquiryInput = $(".inquiry__input");
+const inquiryMsg = $(".inquriy-msg");
+const buttonInput = $(".specifications__btn");
+const singBtn = $(".sing-msg");
+const form = $(".contact__form");
 
 buttonInput.addEventListener("click", singIn);
 function singIn(event) {
